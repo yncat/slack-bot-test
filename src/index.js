@@ -3,4 +3,7 @@ var app = express();
 app.get("/", (request, response) => {
     response.status(200).send("Hello World");
 });
-app.listen(80);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${PORT}!`);
+});
