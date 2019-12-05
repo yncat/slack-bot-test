@@ -1,0 +1,16 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "test bw bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "Yukio Nozawa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slack": "^11.0.2"
+  }
+}
