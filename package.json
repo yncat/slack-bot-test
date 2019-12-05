@@ -10,7 +10,9 @@
   "author": "Yukio Nozawa",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.585.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "slack": "^11.0.2"
   }
 }
