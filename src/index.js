@@ -16,6 +16,7 @@ app.post('/', (req, res) => {
 */
 
 app.post('/', (req, res) => {
+    console.log(req.body.event);
     res.setHeader('Content-Type', 'text/plain');
     res.send("");
 slack.chat.postMessage({
