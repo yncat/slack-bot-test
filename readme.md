@@ -1,30 +1,30 @@
-# Node�Ń{�b�g�����
-BW�̃{�b�g�ɂ������B  
+# Nodeでボットちゃん
+BWのボットにしたい。  
 
-## ����
-Slack�ɂ����āA�{�b�g�A�g�p�̃g�[�N���𕥂��o���Ă��܂��Bxoxb-�Ŏn�܂��B
+## 準備
+Slackにいって、ボット連携用のトークンを払い出してきます。xoxb-で始まるやつ。
 
-�����o���Ă�������g�[�N�����A���s���������� SLACK_BOT_TOKEN �Ƃ������ϐ��ɓ���܂��B
+払い出してもらったトークンを、実行したい環境の SLACK_BOT_TOKEN という環境変数に入れます。
 
-���Ƃ́A���ʂ�
+あとは、普通に
 
 npm install
 
-����΂����ł��B
+すればいいです。
 
-����ŏ��������B
+これで準備完了。
 
-## �N��
+## 起動
 
 npm start
 
-## heroku �Ƀf�v���C
+## heroku にデプロイ
 
-���ϐ���ݒ肵�āA(�ݒ���@���̂��������̂ł��傢�܂���)
+環境変数を設定して、(設定方法そのうち書くのでちょいまって)
 
 git push heroku master
 
-����Γ����B
+すれば動く。
 
-heroku�̃A�v���́A��莞�ԃ��N�G�X�g���Ȃ��ƐQ�Ă��܂��̂ŁA uptime robot �ł��Ȃ�ł���������A����I�Ƀ��N�G�X�g��΂���𑖂点�Ă����Ƃ����B
+herokuのアプリは、一定時間リクエストがないと寝てしまうので、 uptime robot でもなんでもいいから、定期的にリクエスト飛ばすやつを走らせておくといい。
 
