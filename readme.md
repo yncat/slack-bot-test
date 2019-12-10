@@ -6,6 +6,10 @@ Slackにいって、ボット連携用のトークンを払い出してきます
 
 払い出してもらったトークンを、実行したい環境の SLACK_BOT_TOKEN という環境変数に入れます。
 
+s3へのアクセス権を持ったAWSのトークンを払い出してきます。
+
+環境変数 AWS_ACCESS_KEY_ID に token を、 AWS_SECRET_ACCESS_KEY にsecret keyを設定します。
+
 あとは、普通に
 
 npm install
